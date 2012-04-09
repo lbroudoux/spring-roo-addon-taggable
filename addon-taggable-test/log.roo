@@ -1,0 +1,30 @@
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-04-08 01:32:07
+project --topLevelPackage com.github.lbroudoux.roo.addon.taggable --projectName RooTaggableTest --java 6
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-04-08 01:32:08
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-04-08 01:32:20
+osgi start --url file:///home/laurent/dev/workspaces/sts-2.8.1.RELEASE/RooTaggable/target/com.github.lbroudoux.roo.addon.taggable-0.1.0.BUILD-SNAPSHOT-assembly.jar
+osgi start --url file:///home/laurent/dev/workspaces/sts-2.8.1.RELEASE/RooTaggable/target/com.github.lbroudoux.roo.addon.taggable-0.1.0.BUILD-SNAPSHOT-assembly.zip
+osgi start --url file:///home/laurent/dev/repository/com/github/lbroudoux/roo/addon/com.github.lbroudoux.roo.addon.taggable/0.1.0.BUILD-SNAPSHOT/com.github.lbroudoux.roo.addon.taggable-0.1.0.BUILD-SNAPSHOT.jar
+jpa setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY 
+taggable setup
+entity jpa --class ~.domain.Tweet
+// [failed] taggable add --type ~.domain.Tweet
+osgi start --url file:///home/laurent/dev/repository/com/github/lbroudoux/roo/addon/com.github.lbroudoux.roo.addon.taggable/0.1.0.BUILD-SNAPSHOT/com.github.lbroudoux.roo.addon.taggable-0.1.0.BUILD-SNAPSHOT.jar
+// [failed] taggable add --type ~.domain.Tweet
+osgi update --bundleSymbolicName com.github.lbroudoux.roo.addon.taggable 
+taggable add --type ~.domain.Tweet
+osgi update --bundleSymbolicName com.github.lbroudoux.roo.addon.taggable 
+taggable add --type ~.domain.Tweet
+osgi update --bundleSymbolicName com.github.lbroudoux.roo.addon.taggable 
+taggable setup
+taggable add --type ~.domain.Tweet
+osgi update --bundleSymbolicName com.github.lbroudoux.roo.addon.taggable 
+taggable add --type ~.domain.Tweet
+osgi update --bundleSymbolicName com.github.lbroudoux.roo.addon.taggable 
+test integration
+// [failed] perform tests 
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-04-09 00:44:30
+perform tests
+osgi update --bundleSymbolicName com.github.lbroudoux.roo.addon.taggable 
+perform tests
+perform tests
