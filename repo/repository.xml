@@ -1,5 +1,5 @@
 <repository lastmodified='20120430010848.964'>
-  <resource id='com.github.lbroudoux.roo.addon.taggable/0.1.0.BUILD' symbolicname='com.github.lbroudoux.roo.addon.taggable' presentationname='RooTaggable' uri='httppgp://github.com/lbroudoux/spring-roo-addon-taggable/master/repo/com.github.lbroudoux.roo.addon.taggable/0.1.0.BUILD/com.github.lbroudoux.roo.addon.taggable-0.1.0.BUILD.jar' version='0.1.0.BUILD'>
+  <resource id='com.github.lbroudoux.roo.addon.taggable/0.1.0.BUILD' symbolicname='com.github.lbroudoux.roo.addon.taggable' presentationname='RooTaggable' uri='httppgp://raw.github.com/lbroudoux/spring-roo-addon-taggable/master/repo/com.github.lbroudoux.roo.addon.taggable/0.1.0.BUILD/com.github.lbroudoux.roo.addon.taggable-0.1.0.BUILD.jar' version='0.1.0.BUILD'>
     <description>A Spring Roo addon that enhance domain objects so that they can be tagged.</description>
     <size>16457</size>
     <documentation>http://github.com/lbroudoux/spring-roo-addon-taggable</documentation>
