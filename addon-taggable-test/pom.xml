@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.github.lbroudoux.roo.addon.taggable</groupId>
-    <artifactId>RooTaggableTest</artifactId>
+    <parent>
+        <groupId>com.github.lbroudoux.roo.addon.taggable</groupId>
+        <artifactId>com.github.lbroudoux.roo.addon.taggable.root</artifactId>
+        <version>0.1.0.BUILD-SNAPSHOT</version>
+        <relativePath>../</relativePath>
+    </parent>
+    <artifactId>com.github.lbroudoux.roo.addon.taggabletest</artifactId>
     <packaging>jar</packaging>
-    <version>0.1.0.BUILD-SNAPSHOT</version>
     <name>RooTaggableTest</name>
     <properties>
         <aspectj.version>1.6.12.M2</aspectj.version>
