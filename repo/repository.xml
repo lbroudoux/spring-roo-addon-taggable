@@ -1,0 +1,31 @@
+<repository lastmodified='20120430010848.964'>
+  <resource id='com.github.lbroudoux.roo.addon.taggable/0.1.0.BUILD' symbolicname='com.github.lbroudoux.roo.addon.taggable' presentationname='RooTaggable' uri='httppgp://github.com/lbroudoux/spring-roo-addon-taggable/repo/com.github.lbroudoux.roo.addon.taggable/0.1.0.BUILD/com.github.lbroudoux.roo.addon.taggable-0.1.0.BUILD.jar' version='0.1.0.BUILD'>
+    <description>A Spring Roo addon that enhance domain objects so that they can be tagged.</description>
+    <size>16457</size>
+    <documentation>http://github.com/lbroudoux/spring-roo-addon-taggable</documentation>
+    <license>http://www.gnu.org/copyleft/gpl.html</license>
+    <capability name='bundle'>
+      <p n='symbolicname' v='com.github.lbroudoux.roo.addon.taggable'/>
+      <p n='presentationname' v='RooTaggable'/>
+      <p n='version' t='version' v='0.1.0.BUILD'/>
+      <p n='manifestversion' v='2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.github.lbroudoux.roo.addon.taggable'/>
+      <p n='version' t='version' v='0.0.0'/>
+      <p n='uses:' v='org.springframework.roo.model,org.springframework.roo.shell,org.springframework.roo.classpath.details,org.springframework.roo.classpath.details.annotations,org.springframework.roo.classpath.itd,org.springframework.roo.project,org.springframework.roo.support.util,org.springframework.roo.metadata,org.springframework.roo.support.style,org.springframework.roo.classpath,org.osgi.service.component,org.w3c.dom'/>
+    </capability>
+    <require name='package' filter='(&amp;(package=org.osgi.service.component)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.service.component;version="[1.1,2)"</require>
+    <require name='package' filter='(&amp;(package=org.springframework.roo.classpath)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.springframework.roo.classpath;version="[1.2,2)"</require>
+    <require name='package' filter='(&amp;(package=org.springframework.roo.classpath.details)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.springframework.roo.classpath.details;version="[1.2,2)"</require>
+    <require name='package' filter='(&amp;(package=org.springframework.roo.classpath.details.annotations)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.springframework.roo.classpath.details.annotations;version="[1.2,2)"</require>
+    <require name='package' filter='(&amp;(package=org.springframework.roo.classpath.itd)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.springframework.roo.classpath.itd;version="[1.2,2)"</require>
+    <require name='package' filter='(&amp;(package=org.springframework.roo.metadata)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.springframework.roo.metadata;version="[1.2,2)"</require>
+    <require name='package' filter='(&amp;(package=org.springframework.roo.model)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.springframework.roo.model;version="[1.2,2)"</require>
+    <require name='package' filter='(&amp;(package=org.springframework.roo.project)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.springframework.roo.project;version="[1.2,2)"</require>
+    <require name='package' filter='(&amp;(package=org.springframework.roo.shell)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.springframework.roo.shell;version="[1.2,2)"</require>
+    <require name='package' filter='(&amp;(package=org.springframework.roo.support.style)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.springframework.roo.support.style;version="[1.2,2)"</require>
+    <require name='package' filter='(&amp;(package=org.springframework.roo.support.util)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.springframework.roo.support.util;version="[1.2,2)"</require>
+    <require name='package' filter='(&amp;(package=org.w3c.dom))' extend='false' multiple='false' optional='false'>Import package org.w3c.dom</require>
+  </resource>
+</repository>
