@@ -94,7 +94,7 @@ public class TaggableOperationsImpl implements TaggableOperations {
 		projectOperations.addRepository("", new Repository("Taggable Roo add-on repository", "Taggable Roo add-on repository", "http://raw.github.com/lbroudoux/spring-roo-addon-taggable/master/repo"));
 		
 		// Install the dependency on the add-on jar (
-		dependencies.add(new Dependency("com.github.lbroudoux.roo.addon", "com.github.lbroudoux.roo.addon.taggable", "0.1.1.BUILD", DependencyType.JAR, DependencyScope.PROVIDED));
+		dependencies.add(new Dependency("com.github.lbroudoux.roo.addon", "com.github.lbroudoux.roo.addon", "0.1.1.BUILD", DependencyType.JAR, DependencyScope.COMPILE));
 		
 		// Install dependencies defined in external XML file
 		for (Element dependencyElement : XmlUtils.findElements("/configuration/batch/dependencies/dependency", XmlUtils.getConfiguration(getClass()))) {
