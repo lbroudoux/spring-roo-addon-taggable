@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.github.lbroudoux.roo.addon</groupId>
+  <artifactId>com.github.lbroudoux.roo.addon.taggable</artifactId>
+  <versioning>
+    <release>0.1.1.BUILD</release>
+    <versions>
+      <version>0.1.1.BUILD</version>
+    </versions>
+    <lastUpdated>20120606200624</lastUpdated>
+  </versioning>
+</metadata>
