@@ -186,7 +186,7 @@
                         <Bundle-DocURL>${project.url}</Bundle-DocURL>
                     </instructions>
                     <remoteOBR>true</remoteOBR>
-                    <bundleUrl>httppgp://github.com/lbroudoux/spring-roo-addon-taggable/${repo.folder}/${project.artifactId}/${project.version}/${project.artifactId}-${project.version}.jar</bundleUrl>
+                    <bundleUrl>httppgp://raw.github.com/lbroudoux/spring-roo-addon-taggable/master/${repo.folder}/com/github/lbroudoux/roo/addon/taggable/${project.artifactId}/${project.version}/${project.artifactId}-${project.version}.jar</bundleUrl>
                 </configuration>
             </plugin>
             <plugin>
