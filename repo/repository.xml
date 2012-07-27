@@ -1,4 +1,34 @@
-<repository lastmodified='20120606100624.225'>
+<repository lastmodified='20120727012838.875'>
+  <resource id='com.github.lbroudoux.roo.addon.taggable/0.1.2.BUILD' symbolicname='com.github.lbroudoux.roo.addon.taggable' presentationname='RooTaggable' uri='httppgp://raw.github.com/lbroudoux/spring-roo-addon-taggable/master/repo/com/github/lbroudoux/roo/addon/com.github.lbroudoux.roo.addon.taggable/0.1.2.BUILD/com.github.lbroudoux.roo.addon.taggable-0.1.2.BUILD.jar' version='0.1.2.BUILD'>
+    <description>A Spring Roo addon that enhance domain objects so that they can be tagged.</description>
+    <size>16577</size>
+    <documentation>http://github.com/lbroudoux/spring-roo-addon-taggable</documentation>
+    <license>http://www.gnu.org/copyleft/gpl.html</license>
+    <capability name='bundle'>
+      <p n='symbolicname' v='com.github.lbroudoux.roo.addon.taggable'/>
+      <p n='presentationname' v='RooTaggable'/>
+      <p n='version' t='version' v='0.1.2.BUILD'/>
+      <p n='manifestversion' v='2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.github.lbroudoux.roo.addon.taggable'/>
+      <p n='version' t='version' v='0.0.0'/>
+      <p n='uses:' v='org.springframework.roo.model,org.springframework.roo.shell,org.apache.commons.lang3,org.springframework.roo.classpath.details,org.apache.commons.lang3.builder,org.springframework.roo.classpath.details.annotations,org.springframework.roo.classpath.itd,org.springframework.roo.project,org.springframework.roo.metadata,org.springframework.roo.classpath,org.osgi.service.component,org.springframework.roo.support.util,org.w3c.dom'/>
+    </capability>
+    <require name='package' filter='(&amp;(package=org.apache.commons.lang3)(version&gt;=3.1.0)(!(version&gt;=4.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.lang3;version="[3.1,4)"</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.lang3.builder)(version&gt;=3.1.0)(!(version&gt;=4.0.0)))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.lang3.builder;version="[3.1,4)"</require>
+    <require name='package' filter='(&amp;(package=org.osgi.service.component)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.osgi.service.component;version="[1.1,2)"</require>
+    <require name='package' filter='(&amp;(package=org.springframework.roo.classpath)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.springframework.roo.classpath;version="[1.2,2)"</require>
+    <require name='package' filter='(&amp;(package=org.springframework.roo.classpath.details)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.springframework.roo.classpath.details;version="[1.2,2)"</require>
+    <require name='package' filter='(&amp;(package=org.springframework.roo.classpath.details.annotations)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.springframework.roo.classpath.details.annotations;version="[1.2,2)"</require>
+    <require name='package' filter='(&amp;(package=org.springframework.roo.classpath.itd)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.springframework.roo.classpath.itd;version="[1.2,2)"</require>
+    <require name='package' filter='(&amp;(package=org.springframework.roo.metadata)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.springframework.roo.metadata;version="[1.2,2)"</require>
+    <require name='package' filter='(&amp;(package=org.springframework.roo.model)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.springframework.roo.model;version="[1.2,2)"</require>
+    <require name='package' filter='(&amp;(package=org.springframework.roo.project)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.springframework.roo.project;version="[1.2,2)"</require>
+    <require name='package' filter='(&amp;(package=org.springframework.roo.shell)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.springframework.roo.shell;version="[1.2,2)"</require>
+    <require name='package' filter='(&amp;(package=org.springframework.roo.support.util)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.springframework.roo.support.util;version="[1.2,2)"</require>
+    <require name='package' filter='(&amp;(package=org.w3c.dom))' extend='false' multiple='false' optional='false'>Import package org.w3c.dom</require>
+  </resource>
   <resource id='com.github.lbroudoux.roo.addon.taggable/0.1.1.BUILD' symbolicname='com.github.lbroudoux.roo.addon.taggable' presentationname='RooTaggable' uri='httppgp://raw.github.com/lbroudoux/spring-roo-addon-taggable/master/repo/com/github/lbroudoux/roo/addon/com.github.lbroudoux.roo.addon.taggable/0.1.1.BUILD/com.github.lbroudoux.roo.addon.taggable-0.1.1.BUILD.jar' version='0.1.1.BUILD'>
     <description>A Spring Roo addon that enhance domain objects so that they can be tagged.</description>
     <size>16504</size>

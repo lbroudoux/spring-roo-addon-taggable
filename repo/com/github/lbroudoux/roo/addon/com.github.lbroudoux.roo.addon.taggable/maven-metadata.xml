@@ -3,10 +3,11 @@
   <groupId>com.github.lbroudoux.roo.addon</groupId>
   <artifactId>com.github.lbroudoux.roo.addon.taggable</artifactId>
   <versioning>
-    <release>0.1.1.BUILD</release>
+    <release>0.1.2.BUILD</release>
     <versions>
       <version>0.1.1.BUILD</version>
+      <version>0.1.2.BUILD</version>
     </versions>
-    <lastUpdated>20120606200624</lastUpdated>
+    <lastUpdated>20120727112838</lastUpdated>
   </versioning>
 </metadata>
