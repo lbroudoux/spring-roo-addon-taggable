@@ -217,9 +217,9 @@
         </plugins>
     </build>
     <scm>
-    	<connection>scm:git:git@github.com:lbroudoux/spring-roo-addon-taggable.git</connection>
-        <url>scm:git:git@github.com:lbroudoux/spring-roo-addon-taggable.git</url>
-        <developerConnection>scm:git:git@github.com:lbroudoux/spring-roo-addon-taggable.git</developerConnection>
+    	<connection>scm:git:https://github.com/lbroudoux/spring-roo-addon-taggable.git</connection>
+        <url>scm:git:https://github.com/lbroudoux/spring-roo-addon-taggable.git</url>
+        <developerConnection>scm:git:https://github.com/lbroudoux/spring-roo-addon-taggable.git</developerConnection>
     </scm>
     <distributionManagement>
        <repository>
