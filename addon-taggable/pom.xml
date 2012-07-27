@@ -4,7 +4,7 @@
     <groupId>com.github.lbroudoux.roo.addon</groupId>
     <artifactId>com.github.lbroudoux.roo.addon.taggable</artifactId>
     <packaging>bundle</packaging>
-    <version>0.1.2.BUILD</version>
+    <version>0.1.2.BUILD-SNAPSHOT</version>
     <name>RooTaggable</name>
     <organization>
         <name>Laurent Broudoux</name>
