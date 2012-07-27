@@ -7,6 +7,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import org.apache.commons.lang3.Validate;
+import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.springframework.roo.classpath.PhysicalTypeIdentifierNamingUtils;
 import org.springframework.roo.classpath.PhysicalTypeMetadata;
 import org.springframework.roo.classpath.details.FieldMetadata;
@@ -22,8 +24,6 @@ import org.springframework.roo.model.DataType;
 import org.springframework.roo.model.JavaSymbolName;
 import org.springframework.roo.model.JavaType;
 import org.springframework.roo.project.LogicalPath;
-import org.springframework.roo.support.style.ToStringCreator;
-import org.springframework.roo.support.util.Assert;
 
 /**
  * This type produces metadata for a new ITD. It uses an {@link ItdTypeDetailsBuilder} provided by 
@@ -63,7 +63,7 @@ public class TaggableMetadata extends AbstractItdTypeDetailsProvidingMetadataIte
     
 	public TaggableMetadata(String identifier, JavaType aspectName, PhysicalTypeMetadata governorPhysicalTypeMetadata) {
 		super(identifier, aspectName, governorPhysicalTypeMetadata);
-		Assert.isTrue(isValid(identifier), "Metadata identification string '" + identifier + "' does not appear to be a valid");
+		Validate.isTrue(isValid(identifier), "Metadata identification string '" + identifier + "' does not appear to be a valid");
 
 		// Initialize entity name.
 		entityName = getJavaType(identifier).getSimpleTypeName();
@@ -201,13 +201,13 @@ public class TaggableMetadata extends AbstractItdTypeDetailsProvidingMetadataIte
 	// Typically, no changes are required beyond this point
 	
 	public String toString() {
-		ToStringCreator tsc = new ToStringCreator(this);
-		tsc.append("identifier", getId());
-		tsc.append("valid", valid);
-		tsc.append("aspectName", aspectName);
-		tsc.append("destinationType", destination);
-		tsc.append("governor", governorPhysicalTypeMetadata.getId());
-		tsc.append("itdTypeDetails", itdTypeDetails);
-		return tsc.toString();
+		ToStringBuilder tsb = new ToStringBuilder(this);
+		tsb.append("identifier", getId());
+		tsb.append("valid", valid);
+		tsb.append("aspectName", aspectName);
+		tsb.append("destinationType", destination);
+		tsb.append("governor", governorPhysicalTypeMetadata.getId());
+		tsb.append("itdTypeDetails", itdTypeDetails);
+		return tsb.toString();
 	}
 }

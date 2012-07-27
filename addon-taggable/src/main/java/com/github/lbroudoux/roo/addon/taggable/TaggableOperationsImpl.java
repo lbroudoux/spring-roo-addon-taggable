@@ -3,6 +3,7 @@ package com.github.lbroudoux.roo.addon.taggable;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.commons.lang3.Validate;
 import org.apache.felix.scr.annotations.Component;
 import org.apache.felix.scr.annotations.Reference;
 import org.apache.felix.scr.annotations.Service;
@@ -18,7 +19,6 @@ import org.springframework.roo.project.Dependency;
 import org.springframework.roo.project.DependencyScope;
 import org.springframework.roo.project.DependencyType;
 import org.springframework.roo.project.Repository;
-import org.springframework.roo.support.util.Assert;
 import org.springframework.roo.support.util.XmlUtils;
 import org.w3c.dom.Element;
 
@@ -55,7 +55,7 @@ public class TaggableOperationsImpl implements TaggableOperations {
 	/** {@inheritDoc} */
 	public void annotateType(JavaType javaType) {
 		// Use Roo's Assert type for null checks
-		Assert.notNull(javaType, "Java type required");
+		Validate.notNull(javaType, "Java type required");
 
 		// Obtain ClassOrInterfaceTypeDetails for this java type
 		ClassOrInterfaceTypeDetails existing = typeLocationService.getTypeDetails(javaType);
@@ -94,7 +94,7 @@ public class TaggableOperationsImpl implements TaggableOperations {
 		projectOperations.addRepository("", new Repository("Taggable Roo add-on repository", "Taggable Roo add-on repository", "http://raw.github.com/lbroudoux/spring-roo-addon-taggable/master/repo"));
 		
 		// Install the dependency on the add-on jar (
-		dependencies.add(new Dependency("com.github.lbroudoux.roo.addon", "com.github.lbroudoux.roo.addon", "0.1.1.BUILD", DependencyType.JAR, DependencyScope.COMPILE));
+		dependencies.add(new Dependency("com.github.lbroudoux.roo.addon", "com.github.lbroudoux.roo.addon", "0.1.2.BUILD", DependencyType.JAR, DependencyScope.PROVIDED));
 		
 		// Install dependencies defined in external XML file
 		for (Element dependencyElement : XmlUtils.findElements("/configuration/batch/dependencies/dependency", XmlUtils.getConfiguration(getClass()))) {

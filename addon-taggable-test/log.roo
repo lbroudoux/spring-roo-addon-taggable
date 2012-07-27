@@ -28,3 +28,22 @@ perform tests
 osgi update --bundleSymbolicName com.github.lbroudoux.roo.addon.taggable 
 perform tests
 perform tests
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-07-27 11:28:35
+osgi ps
+osgi start --url file://home/laurent/dev/repsoitory/com/github/lbroudoux/roo/addon/com.github.lbroudoux.roo.addon.taggable/0.1.2.BUILD-SNAPSHOT/com.github.lbroudoux.roo.addon.taggable-0.1.2.BUILD-SNAPSHOT.jar
+osgi start --url file:///home/laurent/dev/repsoitory/com/github/lbroudoux/roo/addon/com.github.lbroudoux.roo.addon.taggable/0.1.2.BUILD-SNAPSHOT/com.github.lbroudoux.roo.addon.taggable-0.1.2.BUILD-SNAPSHOT.jar
+// [failed] osgi uninstall --bundleSymbolicName RooTaggable
+// [failed] osgi uninstall --bundleSymbolicName 75
+osgi ps
+// [failed] osgi uninstall --bundleSymbolicName RooTaggable
+// [failed] osgi uninstall --bundleSymbolicName RooTaggable
+osgi ps
+osgi uninstall --bundleSymbolicName com.github.lbroudoux.roo.addon.taggable
+osgi ps
+osgi install --url file://home/laurent/dev/repository/com/github/lbroudoux/roo/addon/com.github.lbroudoux.roo.addon.taggable/0.1.2.BUILD-SNAPSHOT/com.github.lbroudoux.roo.addon.taggable-0.1.2.BUILD-SNAPSHOT.jar
+osgi install --url file:///home/laurent/dev/repository/com/github/lbroudoux/roo/addon/com.github.lbroudoux.roo.addon.taggable/0.1.2.BUILD-SNAPSHOT/com.github.lbroudoux.roo.addon.taggable-0.1.2.BUILD-SNAPSHOT.jar
+osgi ps
+osgi obr start --bundleSymbolicName com.github.lbroudoux.roo.addon.taggable
+osgi start --url file:///home/laurent/dev/repository/com/github/lbroudoux/roo/addon/com.github.lbroudoux.roo.addon.taggable/0.1.2.BUILD-SNAPSHOT/com.github.lbroudoux.roo.addon.taggable-0.1.2.BUILD-SNAPSHOT.jar
+q
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-07-27 11:43:00
